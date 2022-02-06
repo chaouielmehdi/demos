@@ -11,7 +11,8 @@ class ParserService {
 
     public void doParse(String parseString, ParserType parseType) {
         Parser parser = parserFactory.getParser(parseType);
-        System.out.println("ParserService.doParse... " + parser);
+
+        System.out.println("Calling ParserService.doParse by parser = " + parser);
         parser.parse(parseString);
     }
 }

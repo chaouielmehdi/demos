@@ -9,13 +9,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AppConfig.class)
-public class ServiceLocatorFactoryExample {
+public class FactoryTest {
     @Autowired
     private ParserService parserService;
 
     @Test
     public void testParserFactory() {
+        System.out.println("------------------------------------------------");
         parserService.doParse("JSON to be parsed", ParserType.JSON);
         parserService.doParse("XML to be parsed", ParserType.XML);
+        System.out.println("------------------------------------------------");
     }
 }

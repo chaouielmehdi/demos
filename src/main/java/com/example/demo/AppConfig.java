@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-@ComponentScan(basePackages = {"com.example.demo"})
+@ComponentScan(basePackages = {"com"})
 class AppConfig {
     @Bean
     public FactoryBean serviceLocatorFactoryBean() {
@@ -19,13 +19,11 @@ class AppConfig {
     }
 
     @Bean(name = "jsonParser")
-    @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public JsonParser jsonParser() {
         return new JsonParser();
     }
 
     @Bean(name = "xmlParser")
-    @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public XMLParser xmlParser() {
         return new XMLParser();
     }
