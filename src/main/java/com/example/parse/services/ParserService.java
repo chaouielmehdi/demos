@@ -1,8 +1,8 @@
-package com.example.demo.services;
+package com.example.parse.services;
 
-import com.example.demo.enums.ParserType;
-import com.example.demo.parsers.IParser;
-import com.example.demo.parsers.factory.IParserFactory;
+import com.example.parse.enums.ParserType;
+import com.example.parse.parsers.IParser;
+import com.example.parse.parsers.factory.IParserFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

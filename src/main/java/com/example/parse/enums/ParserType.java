@@ -1,4 +1,4 @@
-package com.example.demo.enums;
+package com.example.parse.enums;
 
 public enum ParserType {
     JSON("jsonParser"),

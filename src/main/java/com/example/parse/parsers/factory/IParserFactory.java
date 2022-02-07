@@ -1,7 +1,7 @@
-package com.example.demo.parsers.factory;
+package com.example.parse.parsers.factory;
 
-import com.example.demo.enums.ParserType;
-import com.example.demo.parsers.IParser;
+import com.example.parse.enums.ParserType;
+import com.example.parse.parsers.IParser;
 import org.springframework.stereotype.Component;
 
 @Component

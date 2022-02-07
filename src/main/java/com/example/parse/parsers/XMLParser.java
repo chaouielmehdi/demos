@@ -1,4 +1,4 @@
-package com.example.demo.parsers;
+package com.example.parse.parsers;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 public class XMLParser implements IParser {
     @Override
     public void parse(String str) {
-        System.out.println("Calling XMLParser.parse and str = " + str);
+        System.out.println("Calling XMLParser.parse with str = " + str);
     }
 }
