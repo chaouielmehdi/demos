@@ -1,16 +1,18 @@
-package com.example.demo;
+package com.example.demo.services;
 
+import com.example.demo.enums.ParserType;
+import com.example.demo.parsers.IParser;
+import com.example.demo.parsers.factory.IParserFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-class ParserService {
-
+public class ParserService {
     @Autowired
-    ParserFactory parserFactory;
+    IParserFactory parserFactory;
 
     public void doParse(String parseString, ParserType parseType) {
-        Parser parser = parserFactory.getParser(parseType);
+        IParser parser = parserFactory.getParser(parseType);
 
         System.out.println("Calling ParserService.doParse by parser = " + parser);
         parser.parse(parseString);
