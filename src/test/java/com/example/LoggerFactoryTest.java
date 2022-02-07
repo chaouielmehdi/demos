@@ -17,7 +17,7 @@ public class LoggerFactoryTest {
     @Test
     public void testLoggerFactory() {
         System.out.println("------------------------------------------------");
-        loggerService.log("ss", "message to log");
+        loggerService.log("console", "message to log");
         System.out.println("------------------------------------------------");
     }
 }
