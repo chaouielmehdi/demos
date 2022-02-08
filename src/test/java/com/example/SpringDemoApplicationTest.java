@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class SpringDemoApplicationTest {
     @Test
-    public void testLoggerFactory() {
+    public void test() {
         System.out.println("------------------------------------------------");
         System.out.println("------------------------------------------------");
     }
