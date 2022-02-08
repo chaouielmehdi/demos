@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ReadBehaviorConfig {
+public class ValidateBehaviorConfig {
     @Bean
     public ServiceLocatorFactoryBean getBehaviorBean() {
         ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
-        factoryBean.setServiceLocatorInterface(IReadBehaviorFactory.class);
+        factoryBean.setServiceLocatorInterface(IValidateBehaviorFactory.class);
         return factoryBean;
     }
 }
