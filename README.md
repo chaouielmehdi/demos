@@ -11,4 +11,10 @@ Demo project for Spring Boot self taught
   - spring-boot-starter-test
 
 ### dp-factory
-- Annotation based ServiceLocatorFactoryBean
+- Annotation based ServiceLocatorFactoryBean Design Pattern.
+  - Example Parser
+  - Example Logger
+
+### dp-factory-strategy
+- Strategy & Factory Design Patterns.
+  - Example RO-Module
