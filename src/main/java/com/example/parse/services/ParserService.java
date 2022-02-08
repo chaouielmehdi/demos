@@ -11,8 +11,8 @@ public class ParserService {
     @Autowired
     IParserFactory parserFactory;
 
-    public void doParse(String parseString, ParserType parseType) {
-        IParser parser = parserFactory.getParser(parseType);
+    public void doParse(String parseString, ParserType parserType) {
+        IParser parser = parserFactory.getParser(parserType);
 
         System.out.println("Calling ParserService.doParse by parser = " + parser);
         parser.parse(parseString);
