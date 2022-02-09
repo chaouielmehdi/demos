@@ -13,20 +13,10 @@ public class ROController {
     @Autowired
     ROService roService;
 
-    /**
-     * An end point to read RO
-     * @param formatAsString from controller's client
-     * @return RODto
-     */
     public RODto read(String formatAsString) {
         return roService.read(formatAsString);
     }
 
-    /**
-     * An end point to validate RO
-     * @param formatAsString from controller's client
-     * @return RODto
-     */
     public List<ErrorMessage> validate(String formatAsString) {
         return roService.validate(formatAsString);
     }

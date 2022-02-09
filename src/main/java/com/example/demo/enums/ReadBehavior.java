@@ -1,13 +1,14 @@
 package com.example.demo.enums;
 
-public enum Behavior {
-    ReadBehavior("ReadBehavior"),
-    ValidateBehavior("ValidateBehavior");
+public enum ReadBehavior {
+    CSVReadBehavior("CSVReadBehavior"),
+    MT101ReadBehavior("MT101ReadBehavior");
 
+    private static final String READ_BEHAVIOR = "ReadBehavior";
     public final String value;
 
-    Behavior(String input) {
-        this.value = input;
+    ReadBehavior(String value) {
+        this.value = value;
     }
 
     @Override
@@ -15,12 +16,18 @@ public enum Behavior {
         return this.value;
     }
 
-    public static String combineFormatAndBehavior(String formatAsString, Behavior behavior) {
-        Format format = Format.getFormatEnum(formatAsString);
+    public static ReadBehavior getBehaviorEnum(Format format) {
         if(format == null) {
             return null;
         }
 
-        return format.value + behavior.value;
+        ReadBehavior behavior;
+        try {
+            behavior = ReadBehavior.valueOf(format.value + READ_BEHAVIOR);
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
+
+        return behavior;
     }
 }

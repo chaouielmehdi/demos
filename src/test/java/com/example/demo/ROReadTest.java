@@ -13,7 +13,7 @@ public class ROReadTest {
     ROController roController;
 
     @Test
-    public void testRODtoIsNull() {
+    public void test_read_isNull() {
         RODto roDto = roController.read("invalid-format");
 
         boolean expression = roDto == null;
@@ -22,7 +22,7 @@ public class ROReadTest {
     }
 
     @Test
-    public void testRODtoIsNotNull() {
+    public void test_read_isNotNull() {
         RODto roDto = roController.read("MT101");
 
         boolean expression = roDto != null;
@@ -31,7 +31,7 @@ public class ROReadTest {
     }
 
     @Test
-    public void testRODtoAmountMT101() {
+    public void test_read_amount_MT101() {
         RODto roDto = roController.read("MT101");
 
         boolean expression = roDto.getTotalAmount() == 200;
@@ -40,7 +40,7 @@ public class ROReadTest {
     }
 
     @Test
-    public void testRODtoAmountCSV() {
+    public void test_read_amount_CSV() {
         RODto roDto = roController.read("CSV");
 
         boolean expression = roDto.getTotalAmount() == 100;
