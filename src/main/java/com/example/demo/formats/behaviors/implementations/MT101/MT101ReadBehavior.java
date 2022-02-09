@@ -4,7 +4,7 @@ import com.example.demo.dtos.RODto;
 import com.example.demo.formats.behaviors.IReadBehavior;
 import org.springframework.stereotype.Component;
 
-@Component(value = "MT101")
+@Component(value = "MT101ReadBehavior")
 public class MT101ReadBehavior implements IReadBehavior {
     @Override
     public RODto read() {

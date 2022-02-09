@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ReadBehaviorConfig {
     @Bean
-    public ServiceLocatorFactoryBean getBehaviorBean() {
+    public ServiceLocatorFactoryBean getReadBehaviorBean() {
         ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
         factoryBean.setServiceLocatorInterface(IReadBehaviorFactory.class);
         return factoryBean;

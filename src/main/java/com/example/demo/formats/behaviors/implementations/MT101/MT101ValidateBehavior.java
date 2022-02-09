@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component(value = "MT101")
+@Component(value = "MT101ValidateBehavior")
 public class MT101ValidateBehavior implements IValidateBehavior {
     @Override
     public List<ErrorMessage> validate() {

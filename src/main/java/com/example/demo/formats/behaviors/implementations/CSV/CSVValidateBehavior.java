@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component(value = "CSV")
+@Component(value = "CSVValidateBehavior")
 public class CSVValidateBehavior implements IValidateBehavior {
     @Override
     public List<ErrorMessage> validate() {

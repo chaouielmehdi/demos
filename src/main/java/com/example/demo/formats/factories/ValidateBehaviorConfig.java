@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ValidateBehaviorConfig {
     @Bean
-    public ServiceLocatorFactoryBean getBehaviorBean() {
+    public ServiceLocatorFactoryBean getValidateBehaviorBean() {
         ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
         factoryBean.setServiceLocatorInterface(IValidateBehaviorFactory.class);
         return factoryBean;

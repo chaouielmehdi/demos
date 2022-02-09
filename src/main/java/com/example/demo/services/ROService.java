@@ -1,8 +1,8 @@
 package com.example.demo.services;
 
 import com.example.demo.dtos.RODto;
+import com.example.demo.enums.Behavior;
 import com.example.demo.enums.ErrorMessage;
-import com.example.demo.enums.FormatEnum;
 import com.example.demo.formats.behaviors.IReadBehavior;
 import com.example.demo.formats.behaviors.IValidateBehavior;
 import com.example.demo.formats.factories.IReadBehaviorFactory;
@@ -21,16 +21,16 @@ public class ROService {
     private IValidateBehaviorFactory iValidateBehaviorFactory;
 
     public RODto read(String formatAsString) {
-        FormatEnum format = FormatEnum.getFormatEnum(formatAsString);
+        String formatAndBehavior = Behavior.combineFormatAndBehavior(formatAsString, Behavior.ReadBehavior);
 
-        IReadBehavior iReadBehavior = iReadBehaviorFactory.getBehavior(format);
+        IReadBehavior iReadBehavior = iReadBehaviorFactory.getBehavior(formatAndBehavior);
         return iReadBehavior.read();
     }
 
     public List<ErrorMessage> validate(String formatAsString) {
-        FormatEnum format = FormatEnum.getFormatEnum(formatAsString);
+        String formatAndBehavior = Behavior.combineFormatAndBehavior(formatAsString, Behavior.ValidateBehavior);
 
-        IValidateBehavior iValidateBehavior = iValidateBehaviorFactory.getBehavior(format);
+        IValidateBehavior iValidateBehavior = iValidateBehaviorFactory.getBehavior(formatAndBehavior);
         return iValidateBehavior.validate();
     }
 }

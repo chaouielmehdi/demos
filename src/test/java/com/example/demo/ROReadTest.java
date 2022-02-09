@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import com.example.demo.dtos.RODto;
-import com.example.demo.enums.FormatEnum;
 import com.example.demo.controllers.ROController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
 @SpringBootTest
-public class SpringDemoApplicationTest {
+public class ROReadTest {
     @Autowired
     ROController roController;
 

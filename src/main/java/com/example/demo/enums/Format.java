@@ -1,12 +1,12 @@
 package com.example.demo.enums;
 
-public enum FormatEnum {
+public enum Format {
     MT101("MT101"),
     CSV("CSV");
 
     public final String value;
 
-    FormatEnum(String input) {
+    Format(String input) {
         this.value = input;
     }
 
@@ -15,10 +15,10 @@ public enum FormatEnum {
         return this.value;
     }
 
-    public static FormatEnum getFormatEnum(String formatAsString) {
-        FormatEnum format;
+    public static Format getFormatEnum(String formatAsString) {
+        Format format;
         try {
-            format = FormatEnum.valueOf(formatAsString);
+            format = Format.valueOf(formatAsString);
         } catch (IllegalArgumentException e) {
             return null;
         }
