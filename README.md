@@ -10,6 +10,11 @@ Demo project for Spring Boot self taught
   - spring-boot-devtools
   - spring-boot-starter-test
 
+### ioc-di-di
+- Inversion of control
+- Dependency inversion
+- Dependency injection
+
 ### dp-factory
 - Annotation based ServiceLocatorFactoryBean Design Pattern.
   - Example Parser
