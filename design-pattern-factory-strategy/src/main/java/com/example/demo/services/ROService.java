@@ -1,14 +1,14 @@
 package com.example.demo.services;
 
 import com.example.demo.dtos.RODto;
+import com.example.demo.enums.ErrorMessage;
 import com.example.demo.enums.Format;
 import com.example.demo.enums.ReadBehavior;
-import com.example.demo.enums.ErrorMessage;
 import com.example.demo.enums.ValidateBehavior;
+import com.example.demo.formats.factories.IValidateBehaviorFactory;
 import com.example.demo.formats.behaviors.IReadBehavior;
 import com.example.demo.formats.behaviors.IValidateBehavior;
 import com.example.demo.formats.factories.IReadBehaviorFactory;
-import com.example.demo.formats.factories.IValidateBehaviorFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
