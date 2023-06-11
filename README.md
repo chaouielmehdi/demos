@@ -1,6 +1,6 @@
 # About Project
 
-Project that contains demos of new learned stuffs
+Project that contains demos of newly acquired knowledge
 
 # Branches
 
