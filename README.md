@@ -1,14 +1,8 @@
 # About Project
 
-Demo project for Spring Boot self taught
+Project that contains demos of new learned stuffs
 
 # Branches
-
-### master
-- basic project that have only :
-  - spring-boot-starter
-  - spring-boot-devtools
-  - spring-boot-starter-test
 
 ### ioc-di-di
 - Inversion of control
