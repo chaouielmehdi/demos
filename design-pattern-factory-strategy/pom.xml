@@ -12,7 +12,6 @@
 	<artifactId>spring-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-demo</name>
-	<description>Demo project for Spring Boot self taught</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -21,7 +20,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -34,7 +32,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -43,5 +40,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

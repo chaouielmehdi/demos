@@ -2,18 +2,17 @@
 
 Project that contains demos of newly acquired knowledge
 
-# Branches
-
+# Demos
 ### ioc-di-di
 - Inversion of control
 - Dependency inversion
 - Dependency injection
 
-### dp-factory
-- Annotation based ServiceLocatorFactoryBean Design Pattern.
+### design-pattern-factory
+- Annotation based ServiceLocatorFactoryBean Design Pattern
   - Example Parser
   - Example Logger
 
-### dp-factory-strategy
-- Strategy & Factory Design Patterns.
+### design-pattern-factory-strategy
+- Strategy & Factory Design Pattern
   - Example RO-Module
