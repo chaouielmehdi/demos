@@ -3,11 +3,6 @@
 Project that contains demos of newly acquired knowledge
 
 # Demos
-### ioc-di-di
-- Inversion of control
-- Dependency inversion
-- Dependency injection
-
 ### design-pattern-factory
 - Annotation based ServiceLocatorFactoryBean Design Pattern
   - Example Parser
