@@ -6,5 +6,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface IParserFactory {
-    IParser getParser(ParserType parserType);
+	IParser getParser(ParserType parserType);
 }

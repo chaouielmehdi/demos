@@ -7,12 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class LoggerService {
-    @Autowired
-    ILoggerFactory iLoggerFactory;
+	@Autowired
+	ILoggerFactory iLoggerFactory;
 
-    public void log(String loggerType, String message) {
-        Logger iLogger = iLoggerFactory.getLogger(loggerType);
-
-        iLogger.log(message);
-    }
+	public void log(String loggerType, String message) {
+		Logger iLogger = iLoggerFactory.getLogger(loggerType);
+		iLogger.log(message);
+	}
 }

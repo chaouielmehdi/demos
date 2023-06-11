@@ -6,5 +6,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface IValidateBehaviorFactory {
-    IValidateBehavior getBehavior(ValidateBehavior behavior);
+	IValidateBehavior getBehavior(ValidateBehavior behavior);
 }

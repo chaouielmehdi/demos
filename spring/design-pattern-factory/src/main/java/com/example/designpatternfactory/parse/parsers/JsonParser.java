@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component(value = "jsonParser")
 @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class JsonParser implements IParser {
-    @Override
-    public void parse(String str) {
-        System.out.println("Calling JsonParser.parse with str = " + str);
-    }
+	@Override
+	public void parse(String str) {
+		System.out.println("Calling JsonParser.parse with str = " + str);
+	}
 }

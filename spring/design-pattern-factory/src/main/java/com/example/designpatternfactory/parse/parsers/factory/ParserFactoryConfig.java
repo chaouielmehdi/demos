@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ParserFactoryConfig {
-    @Bean
-    public ServiceLocatorFactoryBean getParserBean() {
-        ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
-        factoryBean.setServiceLocatorInterface(IParserFactory.class);
-        return factoryBean;
-    }
+	@Bean
+	public ServiceLocatorFactoryBean getParserBean() {
+		ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
+		factoryBean.setServiceLocatorInterface(IParserFactory.class);
+		return factoryBean;
+	}
 }

@@ -8,16 +8,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class ParserFactoryTest {
-    @Autowired
-    private ParserService parserService;
+	@Autowired
+	private ParserService parserService;
 
-    @Test
-    public void testParserFactory() {
-        String parserTypeAsString = "xmlParser";
-        ParserType parserType = ParserType.getParserType(parserTypeAsString);
-
-        System.out.println("------------------------------------------------");
-        parserService.doParse("File to be parsed", parserType);
-        System.out.println("------------------------------------------------");
-    }
+	@Test
+	public void testParserFactory() {
+		String parserTypeAsString = "xmlParser";
+		ParserType parserType = ParserType.getParserType(parserTypeAsString);
+		System.out.println("------------------------------------------------");
+		parserService.doParse("File to be parsed", parserType);
+		System.out.println("------------------------------------------------");
+	}
 }

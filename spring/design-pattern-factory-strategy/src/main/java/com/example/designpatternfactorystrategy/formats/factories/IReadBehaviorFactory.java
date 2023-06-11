@@ -6,5 +6,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface IReadBehaviorFactory {
-    IReadBehavior getBehavior(ReadBehavior behavior);
+	IReadBehavior getBehavior(ReadBehavior behavior);
 }

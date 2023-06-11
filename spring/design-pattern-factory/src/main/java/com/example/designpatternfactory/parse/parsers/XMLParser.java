@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component(value = "xmlParser")
 @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class XMLParser implements IParser {
-    @Override
-    public void parse(String str) {
-        System.out.println("Calling XMLParser.parse with str = " + str);
-    }
+	@Override
+	public void parse(String str) {
+		System.out.println("Calling XMLParser.parse with str = " + str);
+	}
 }

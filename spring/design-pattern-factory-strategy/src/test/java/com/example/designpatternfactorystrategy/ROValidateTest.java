@@ -11,24 +11,22 @@ import java.util.List;
 
 @SpringBootTest
 public class ROValidateTest {
-    @Autowired
-    ROController roController;
+	@Autowired
+	ROController roController;
 
-    @Test
-    public void test_validate_with_invalid_format() {
-        List<ErrorMessage> errorMessages = roController.validate("invalid-format");
+	@Test
+	public void test_validate_with_invalid_format() {
+		List<ErrorMessage> errorMessages = roController.validate("invalid-format");
+		boolean expression = errorMessages == null;
+		String message = "errorMessages should be null";
+		Assert.state(expression, message);
+	}
 
-        boolean expression = errorMessages == null;
-        String message = "errorMessages should be null";
-        Assert.state(expression, message);
-    }
-
-    @Test
-    public void test_validate_with_valid_format() {
-        List<ErrorMessage> errorMessages = roController.validate("CSV");
-
-        boolean expression = errorMessages != null;
-        String message = "errorMessages should not be null";
-        Assert.state(expression, message);
-    }
+	@Test
+	public void test_validate_with_valid_format() {
+		List<ErrorMessage> errorMessages = roController.validate("CSV");
+		boolean expression = errorMessages != null;
+		String message = "errorMessages should not be null";
+		Assert.state(expression, message);
+	}
 }

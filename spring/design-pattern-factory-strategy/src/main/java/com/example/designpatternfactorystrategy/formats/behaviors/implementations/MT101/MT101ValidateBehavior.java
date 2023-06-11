@@ -9,10 +9,10 @@ import java.util.List;
 
 @Component(value = "MT101ValidateBehavior")
 public class MT101ValidateBehavior implements IValidateBehavior {
-    @Override
-    public List<ErrorMessage> validate() {
-        // 1- validate RODto
-        // 2- return list of errors
-        return new ArrayList<>();
-    }
+	@Override
+	public List<ErrorMessage> validate() {
+		// 1- validate RODto
+		// 2- return list of errors
+		return new ArrayList<>();
+	}
 }

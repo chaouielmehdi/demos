@@ -5,5 +5,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface ILoggerFactory {
-    Logger getLogger(String loggerType);
+	Logger getLogger(String loggerType);
 }

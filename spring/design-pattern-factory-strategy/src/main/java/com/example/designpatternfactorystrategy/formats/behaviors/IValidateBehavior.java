@@ -5,5 +5,5 @@ import com.example.designpatternfactorystrategy.enums.ErrorMessage;
 import java.util.List;
 
 public interface IValidateBehavior {
-    List<ErrorMessage> validate();
+	List<ErrorMessage> validate();
 }

@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class LoggerFactoryConfig {
-    @Bean
-    public ServiceLocatorFactoryBean getLoggerBean() {
-        ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
-        factoryBean.setServiceLocatorInterface(ILoggerFactory.class);
-        return factoryBean;
-    }
+	@Bean
+	public ServiceLocatorFactoryBean getLoggerBean() {
+		ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
+		factoryBean.setServiceLocatorInterface(ILoggerFactory.class);
+		return factoryBean;
+	}
 }

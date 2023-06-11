@@ -10,14 +10,14 @@ import java.util.List;
 
 @Service
 public class ROController {
-    @Autowired
-    ROService roService;
+	@Autowired
+	ROService roService;
 
-    public RODto read(String formatAsString) {
-        return roService.read(formatAsString);
-    }
+	public RODto read(String formatAsString) {
+		return roService.read(formatAsString);
+	}
 
-    public List<ErrorMessage> validate(String formatAsString) {
-        return roService.validate(formatAsString);
-    }
+	public List<ErrorMessage> validate(String formatAsString) {
+		return roService.validate(formatAsString);
+	}
 }

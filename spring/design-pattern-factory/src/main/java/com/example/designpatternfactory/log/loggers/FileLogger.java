@@ -5,12 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component(value = "file")
 public class FileLogger extends Logger {
-    private final String logFilePathname = System.getProperty("user.dir") + "/src/main/resources/log-file.log";
+	private final String logFilePathname = System.getProperty("user.dir") + "/src/main/resources/log-file.log";
 
-    public void log(String message) {
-        FileUtils.create(logFilePathname);
-
-        String messageToLog = prepareMessage(message);
-        FileUtils.write(logFilePathname, messageToLog);
-    }
+	public void log(String message) {
+		FileUtils.create(logFilePathname);
+		String messageToLog = prepareMessage(message);
+		FileUtils.write(logFilePathname, messageToLog);
+	}
 }
