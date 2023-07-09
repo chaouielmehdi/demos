@@ -1,0 +1,10 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:jira-sum-story-points": "cypress run --spec 'cypress/e2e/jira-sum-story-points.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}

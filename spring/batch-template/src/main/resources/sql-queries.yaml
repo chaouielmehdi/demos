@@ -1,0 +1,7 @@
+SELECT_USERS: >
+  SELECT
+    OID,
+    TIMESTAMP,
+    USERNAME
+  FROM
+    USERS
